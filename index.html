@@ -1,20 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
     <h1>Temperature Convertor</h1>
-    <input type="number" name="number" id="number" value="0">
-    <input type="radio" name="toFahrenheit" id="toFahrenheit">
-    <label for="toFahrenheit">Calicos to Fahrenheit</label>
-
-    <input type="radio" name="toCalicos" id="toCalicos">
-    <label for="toCalicos">Fahrenheit to Calicos</label>
-
-    <button id="convert">Convert</button>
-    <p id="result">Show result</p>
-</body>
+    <section class="container">
+      <input type="number" name="number" id="number" value="0" />
+      <input type="radio" name="convert" id="toFahrenheit" />
+      <label for="toFahrenheit">Calicos to Fahrenheit</label>
+      <br />
+      <input type="radio" name="convert" id="toCalicos" />
+      <label for="toCalicos">Fahrenheit to Calicos</label>
+      <br />
+      <button id="convert">Convert</button>
+      <p id="result">Show result</p>
+    </section>
+  </body>
 </html>

@@ -4,25 +4,16 @@ const toCelsiusRadio = document.querySelector("#toCelsius");
 const convertButton = document.querySelector("#convert");
 const showResult = document.querySelector("#result");
 
-console.log(numberDisplay);
-console.log(toFahrenheitRadio);
-console.log(toCelsiusRadio);
-console.log(convertButton);
-console.log(showResult);
-// console.log(numberDisplay.value);
-
-
 function toCelsius(temperature) {
-    return (temperature * 9/5) + 32;
+  return (temperature * 9) / 5 + 32;
 }
 
 function toFahrenheit(temperature) {
-    return (temperature - 32) * 5/9;
+  return ((temperature - 32) * 5) / 9;
 }
 
 convertButton.addEventListener("click", () => {
-    const givenTemp = parseFloat(numberDisplay.value);
-  console.log(givenTemp);
+  const givenTemp = parseFloat(numberDisplay.value);
   if (toCelsiusRadio.checked) {
     const result = toCelsius(givenTemp);
     showResult.textContent = `${result.toFixed(2)} °C`;

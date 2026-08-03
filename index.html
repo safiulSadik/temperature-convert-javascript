@@ -10,15 +10,19 @@
   <body>
     <h1>Temperature Convertor</h1>
     <section class="container">
+
       <input type="number" name="number" id="number" value="0" />
-      <input type="radio" name="convert" id="toFahrenheit" />
-      <label for="toFahrenheit">Calicos to Fahrenheit</label>
+
+      <input type="radio" name="convert" id="toFahrenheit" value="toFahrenheit"checked/>
+      <label for="toFahrenheit">Celsius to Fahrenheit</label>
       <br />
-      <input type="radio" name="convert" id="toCalicos" />
-      <label for="toCalicos">Fahrenheit to Calicos</label>
+
+      <input type="radio" name="convert" id="toCelsius" value="toCelsius"/>
+      <label for="toCelsius">Fahrenheit to Celsius</label>
+
       <br />
       <button id="convert">Convert</button>
-      <p id="result">Show result</p>
+      <p id="result"></p>
     </section>
   </body>
 </html>
